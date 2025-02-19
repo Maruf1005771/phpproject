@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/*added some button styles*/
+.bt {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: rgb(19, 241, 204); 
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   .bt::before,
+   .bt::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .bt::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   .bt::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   .bt:hover::before,
+   .bt:hover::after {
+    width: 58%;
+   }
+   
+   .bt:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   .bt span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+
+
+    
+
+/* Navbar Start */
+
+#navbar{
+    background:  rgba(35, 34, 34, 0.7);
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #00f2ff;
+}
+.navbar-toggler span{
+    color: #00f2ff;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 234, 0);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #003cff;
+    color: white;
+}
+#navbar form button{
+    background: rgb(0, 213, 255);
+    color: white;
+    border: none;
+}
+
+
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(images/background_img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #fcaa06;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 15s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Bangladesh";}
+    20%{content: "Pakistan";}
+    40%{content: "China";}
+    60%{content: "India";}
+    80%{content: "Finland";}
+    100%{content: "Turkey";}
+} 
+
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.packages .card img{
+    border-radius: 5px;
+
+    transition: transform 0.3s ease, filter 0.3s ease; 
+
+}
+
+.packages .card:hover img {
+    transform: scale(1.05); /* Slight zoom for the image */
+    filter: brightness(1.1); /* Brighten the image */
+}
+.packages .card:hover {
+    transform: translateY(-10px); /* Moves the card up slightly */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section Packages End */
+
+
+/* starting of visit video */
+
+.visit {
+  padding-bottom: 8rem;
+  margin-bottom: 10rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/background_2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+  }
+  
+  .section__header {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-family: var(--main-txt);
+  }
+
+.visit__container {
+  position: relative;
+}
+
+.visit__container :is(.section__title, .section__subtitle) {
+  color: white;
+}
+
+.visit__video {
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem;
+}
+
+.visit__video video {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+/* ending of visit video */
+
+/* discount only for jawad sir */
+
+.discount {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("images/discount.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .discount__container .btn {
+    margin-top: 1rem;
+  }
+
+ /* discount only for jawad sir ends here  */
+
+
+ /* gallary part starts */
+ .gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+ 
+  /* Gallary part ends here */
+
+
+  /* Footer part start from here */
+
+  #footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+
+/* Footer part end here */
+
+/* for the footer part */
+/* From Uiverse.io by barisdogansutcu */ 
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-radius: 14px;
+  }
+  .cont::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    width: 40px;
+    height: 96px;
+    background-image: linear-gradient(90deg, #ffffff1c, transparent);
+    z-index: 2;
+    border-radius: 10px 0 0 10px;
+  }
+  .cont::after {
+    content: "";
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    width: 40px;
+    height: 96px;
+    background-image: linear-gradient(-90deg, #ffffff1c, transparent);
+    z-index: 9;
+    border-radius: 0 10px 10px 0;
+  }
+  .basic-marquee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .basic-marquee .bton {
+    transition: all 0.3s ease;
+  }
+  .basic-marquee .bton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .basic-marquee-1 {
+    animation: marquee 15s linear infinite;
+  }
+  .basic-marquee-2 {
+    animation: marquee 21s linear infinite;
+  }
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    min-width: 900px;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .basic-marquee svg {
+    width: 40px;
+  }
+  .basic-marquee .bton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cls-1 {
+    fill: #1ab7ea;
+  }
+  
+  .cls-1,
+  .cls-2 {
+    fill-rule: evenodd;
+  }
+  
+  .cls-2 {
+    fill: #fff;
+  }
+  
+  .cls-3 {
+    fill: #ee8208;
+    fill-rule: evenodd;
+  }
+  
+  .cls-4 {
+    fill: #fff;
+  }
+  
+  .cls-5,
+  .cls-6 {
+    fill-rule: evenodd;
+  }
+  
+  .cls-5 {
+    fill: #48dd55;
+  }
+  .cls-6 {
+    fill: #fff;
+  }
+  
+  .cls-7 {
+    fill: #0a66c2;
+  }
+  
+  .cls-7,
+  .cls-8 {
+    fill-rule: evenodd;
+  }
+  
+  .cls-8 {
+    fill: #fff;
+  }
+  
+  .cls-9 {
+    fill: #10b7f4;
+  }
+  
+  .cls-9,
+  .cls-10 {
+    fill-rule: evenodd;
+  }
+  
+  .cls-10 {
+    fill: #fff;
+  }
+  
+  .cls-11 {
+    fill: #1da1f2;
+  }
+  
+  .cls-11,
+  .cls-12 {
+    fill-rule: evenodd;
+  }
+  
+  .cls-12 {
+    fill: #fff;
+  }
+  

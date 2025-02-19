@@ -1,0 +1,113 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: Arial, sans-serif;
+    background: url(images/gal13.jpg) no-repeat center center/cover; /* Full-screen background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  /* Form Container */
+  .form-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px); /* Blur effect behind the form */
+  }
+ 
+  /* Form Styling */
+  .travel-form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+ 
+  .travel-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+  }
+ 
+  .input-group {
+    margin-bottom: 15px;
+  }
+ 
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+ 
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+ 
+  .input-group input:focus,
+  .input-group select:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+  }
+ 
+  textarea {
+    resize: none;
+  }
+ 
+  .submit-btn {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+ 
+  /* adding buttons for the thank you page */
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+  .btn:hover {
+    background-color: #45a049;
+  }
+ 
+  /* adding buttons page ends here  */

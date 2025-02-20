@@ -48,13 +48,13 @@
                 <a class="nav-link" href="login.html">Packages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Services</a>
+                <a class="nav-link" href="login.php">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Gallary</a>
+                <a class="nav-link" href="login.php">Gallary</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">About</a>
+                <a class="nav-link" href="login.php">About</a>
               </li>
              
             </ul>

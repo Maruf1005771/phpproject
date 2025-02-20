@@ -9,7 +9,7 @@
             <h5>Bringing the World to Your Feet</h5>
             <h1>Visit <span class="changecontent"></span></h1>
             <p>Explore the World, See It Your Way.</p>
-            <a href="booknow.html">BOOK NOW</a> 
+            <a href="booknow.php">BOOK NOW</a> 
             </div>
         </div>
     <!-- Home Section End -->
@@ -33,7 +33,7 @@
                   <h3>Bangladesh</h3>
                   <p>Cox's Bazar Beach is the longest natural sea beach in the world running 120 kilometres.</p>
                   
-                  <a href="bangladesh.html">See More</a>
+                  <a href="bangladesh.php">See More</a>
                 </div>
               </div>
   
@@ -59,7 +59,7 @@
                   <h3>China</h3>
                   <p>The Great Wall of China is a series of fortifications in China.</p>
                   
-                  <a href="china.html">See More</a>
+                  <a href="china.php">See More</a>
                 </div>
               </div>
   
@@ -92,7 +92,7 @@
                 <div class="card-body">
                   <h3>United Kingdom</h3>
                   <p>The Tower Bridge is an iconic symbol of London and one of the famous bridges in the world.</p>
-                   <a href="uk.html">See More</a>
+                   <a href="uk.php">See More</a>
                 </div>
               </div>
   
@@ -104,7 +104,7 @@
                 <div class="card-body">
                   <h3>Finland</h3>
                   <p>Helsinki Cathedral cathedral of the Diocese of Helsinki,located in the centre of Helsinki.</p>
-                  <a href="finland.html">See More</a>
+                  <a href="finland.php">See More</a>
                 </div>
               </div>
   

@@ -45,13 +45,13 @@
                 <a class="nav-link" href="booknow.php">Book</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Packages</a>
+                <a class="nav-link" href="booknow.php">Packages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.php">Services</a>
+                <a class="nav-link" href="home.php">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.php">Gallary</a>
+                <a class="nav-link" href="home.php">Gallary</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.php">About</a>

@@ -54,7 +54,7 @@
                 <a class="nav-link" href="home.php">Gallary</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.php">About</a>
+                <a class="nav-link" href="message.php">Contact Us</a>
               </li>
              
             </ul>
